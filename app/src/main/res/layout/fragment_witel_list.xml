@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".WitelFragment">
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorLightGray"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Area"
+        android:textSize="14dp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewWitel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="10dp"
+            android:text="Witel"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/textViewWitelOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/textViewWitelNok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/textViewWitelPer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:src="@color/colorLightGray" />
+</LinearLayout>

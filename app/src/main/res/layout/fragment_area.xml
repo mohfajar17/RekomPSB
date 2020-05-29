@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".AreaFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="- AREA -"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/datePickArea1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="hh/bb/tttt"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="to"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/datePickArea2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="hh/bb/tttt"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonArea"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"
+        android:text="Filter"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablelayoutid"
+        android:layout_margin="10dp">
+
+        <TableRow
+            android:id="@+id/rowlay"
+            android:background="@color/colorDarkGray"
+            android:divider="@drawable/divider_horizontal_light"
+            android:showDividers="middle"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="Area" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="Valid" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="NOK" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="Valid %" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/colorWhite"
+            android:id="@+id/recyclerViewArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TableRow
+            android:id="@+id/rowAreaTreg"
+            android:background="@color/colorDarkGray"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Treg 5"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/areaTregOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="-"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/areaTregNok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="-"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/areaTregPer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="-"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
